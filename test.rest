@@ -32,15 +32,15 @@ Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWEyZT
 ### CREATE SUBSCRIPTION
 POST  http://localhost:8000/api/v1/subscriptions/
 Content-Type: application/json
-Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWEyZTA0MzgxODkxNjBjNTQxNjk3NjYiLCJpYXQiOjE3ODkwNTkxNDAsImV4cCI6MTc4OTE0NTU0MH0.fKEq3uVljbM8LR0iSa3lvDXeJc6eQFpZDFuP9rhOE4U
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWEyZTA0MzgxODkxNjBjNTQxNjk3NjYiLCJpYXQiOjE3ODkxOTUwNzksImV4cCI6MTc4OTI4MTQ3OX0.ZVPavse8oiWXvDGP4eJNL9yt5zAVZE35myf04vZJt7g
 
 {
-    "name":"Futsall Membership Fee",
-    "price":200,
+    "name":"Re Buy mums medications",
+    "price":190,
     "currency":"AFN",
     "frequncy":"Monthly",
-    "category":"Sport",
-    "startDate":"2026-09-08",
+    "category":"other",
+    "startDate":"2026-09-12",
     "renewalDate":"2026-10-08",
     "paymentMethod":"Cash"
 }
