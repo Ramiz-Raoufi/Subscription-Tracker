@@ -1,0 +1,33 @@
+{
+  "name": "subscription-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --env-file=.env app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.9.1",
+    "express": "^5.2.1",
+    "globals": "^17.11.0",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "@arcjet/inspect": "^1.11.0",
+    "@arcjet/node": "^1.11.0",
+    "@upstash/workflow": "^1.3.3",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dayjs": "^1.11.23",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.9.4",
+    "nodemailer": "^10.0.3"
+  }
+}

@@ -1,0 +1,80 @@
+### POST Create User 
+
+POST http://localhost:8000/api/v1/auth/sign-up
+Content-Type: application/json
+
+{
+    "name":"SirWarzone",
+    "email":"warzonemobile220@gmail.com",
+    "password":"hlprr108()"
+}
+
+
+
+### POST  log-in into your account
+POST http://localhost:8000/api/v1/auth/sign-in
+Content-Type: application/json
+
+{
+    "email":"warzonemobile220@gmail.com",
+    "password":"hlprr108()"
+}
+
+### GET ALL USERS
+GET http://localhost:8000/api/v1/users
+### GET ALL USERS
+GET http://localhost:8000/api/v1/users/6a9eecbdc77cf9f0c1f8e6f7
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWEyZTA0MzgxODkxNjBjNTQxNjk3NjYiLCJpYXQiOjE3ODkwNTkxNDAsImV4cCI6MTc4OTE0NTU0MH0.fKEq3uVljbM8LR0iSa3lvDXeJc6eQFpZDFuP9rhOE4U
+
+
+
+### CREATE SUBSCRIPTION
+POST  http://localhost:8000/api/v1/subscriptions/
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWEyZTA0MzgxODkxNjBjNTQxNjk3NjYiLCJpYXQiOjE3ODkwNTkxNDAsImV4cCI6MTc4OTE0NTU0MH0.fKEq3uVljbM8LR0iSa3lvDXeJc6eQFpZDFuP9rhOE4U
+
+{
+    "name":"Futsall Membership Fee",
+    "price":200,
+    "currency":"AFN",
+    "frequncy":"Monthly",
+    "category":"Sport",
+    "startDate":"2026-09-08",
+    "renewalDate":"2026-10-08",
+    "paymentMethod":"Cash"
+}
+
+
+
+
+###  GET ALL SUBSCRIPTIONS 
+
+
+
+###  GET Single SUBSCRIPTION 
+GET http://localhost:8000/api/v1/subscriptions/6a9fe6958cd970ff1b695d41
+Content-Type: application/json
+
+### CREATE SUBSCRIPTION
+GET  http://localhost:8000/api/v1/subscriptions/user/6aa2b8901031c142ee9d79f4
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWEyYjg5MDEwMzFjMTQyZWU5ZDc5ZjQiLCJpYXQiOjE3ODkwNDg5NzYsImV4cCI6MTc4OTEzNTM3Nn0.WYwuE_IzK0pScgLTMqmbNvounYO8JxkHeYHCAtUBoko
+
+### Udpate Subscription
+PUT http://localhost:8000/api/v1/subscriptions/6aa1a480bfb3e5fada06d3bb
+Content-Type: application/json
+
+{
+    "name":"GEM",
+    "currency":"USD"
+}
+
+
+### DELETE Subscription
+DELETE  http://localhost:8000/api/v1/subscriptions/6aa1a190c7058651f2b32c66
+Content-Type: application/json
+
+###
+GET http://localhost:8000/api/v1/subscriptions
+Content-Type: application/json
